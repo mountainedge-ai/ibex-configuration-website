@@ -5,7 +5,7 @@ It is adapted from seeedstudio Sencraft Web Toolkit ( https://github.com/Seeed-S
 ## How to Use
 
 1. Preview Page
-   - Simply open the [preview page](https://mountainedge-ai/ibex-configuration-website/) to preview the Web Application.
+   - Simply open the [preview page](https://mountainedge-ai.github.io/ibex-configuration-website/) to preview the Web Application.
 
 2. Clone the Repository
    - If you need to further customize or configure the senseCraft application, you can clone this repository to your local machine:
