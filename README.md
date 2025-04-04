@@ -1,4 +1,4 @@
-# SenseCraft AIoT Platform Web Toolkit
+# IBEX configuration 
 
 
 It is a Web Toolkit for senseCraft AIoT Platform, which is a visual programming platform for AIoT applications. It is based on [Vue.js](https://vuejs.org/) and [Vuetify](https://vuetifyjs.com/).
@@ -6,13 +6,13 @@ It is a Web Toolkit for senseCraft AIoT Platform, which is a visual programming 
 ## How to Use
 
 1. Preview Page
-   - Simply open the [preview page](https://seeed-studio.github.io/SenseCraft-Web-Toolkit/) to preview the Web Application.
+   - Simply open the [preview page](https://mountainedge-ai/ibex-configuration-website/) to preview the Web Application.
 
 2. Clone the Repository
    - If you need to further customize or configure the senseCraft application, you can clone this repository to your local machine:
      ```
-     git clone https://github.com/Seeed-Studio/sensecraft-web-toolkit.git
-     cd sensecraft-web-toolkit
+     git clone https://github.com/mountainedge-ai/ibex-configuration-website.git
+     cd ibex-configuration-website
      yarn install
      yarn run dev
      ```
@@ -30,8 +30,3 @@ It is a Web Toolkit for senseCraft AIoT Platform, which is a visual programming 
    - Once you have completed the custom configuration of the application, you can deploy it to your senseCraft environment.
    - Follow the official senseCraft documentation or relevant instructions on how to deploy the application to your environment.
 
-## Additional Resources
-
-- [senseCraft Documentation](https://sensecraftma.seeed.cc/)
-
-Welcome to the Web App repository! If you have any questions or feedback, feel free to contact us.
