@@ -8,16 +8,8 @@
 </script>
 
 <template>
-  <XiaoESP32S3Tools
-    v-if="
-      deviceStore.deviceType.id === deviceTypeObj[DeviceType.XiaoEsp32s3].id
-    "
-    key="XIAO ESP32S3"
-  />
   <GroveAIWE2Tools
-    v-else-if="
-      deviceStore.deviceType.id === deviceTypeObj[DeviceType.GroveAIWE2].id
-    "
-    key="GROVE AI WE2"
+    v-if="deviceStore.deviceType.id === deviceTypeObj[DeviceType.GroveAIWE2].id"
+    key="IBEX WE2"
   />
 </template>

@@ -84,7 +84,8 @@
     const data = await retry(
       () =>
         fetch(
-          `https://files.seeedstudio.com/sscma/sscma-model-we2.json?timestamp=${new Date().getTime()}`
+          // `https://files.seeedstudio.com/sscma/sscma-model-we2.json?timestamp=${new Date().getTime()}`
+          `../../../src/assets/local-model-we2.json?timestamp=${new Date().getTime()}`
         ).then((response) => response.json()),
       5,
       500

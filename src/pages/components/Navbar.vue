@@ -1,24 +1,17 @@
 <template>
-  <a-alert type="warning" banner center closable
-    >We apologize that the AI model in the tool is not updating at this time. If
-    you would like to explore more models, please visit our website at
-    <a href="https://sensecraft.seeed.cc/ai/#/model" target="_blank"
-      >https://sensecraft.seeed.cc/ai/#/model</a
-    ></a-alert
-  >
   <div class="navbar">
     <div class="left-side">
       <a-space>
         <img
           alt="logo"
-          src="@/assets/logo.png"
+          src="@/assets/ibex.png"
           style="width: 33px; height: 33px"
         />
         <a-typography-title
           :style="{ margin: 0, fontSize: '18px' }"
           :heading="5"
         >
-          SenseCraft
+          Ibex AI
         </a-typography-title>
         <icon-menu-fold
           v-if="!topMenu && appStore.device === 'mobile'"

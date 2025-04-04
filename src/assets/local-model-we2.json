@@ -1,0 +1,320 @@
+{
+	"version": "1.0",
+	"firmwares": [{
+		"name": "Grove Vision AI (WE2)",
+		"description": "SSCMA firmware for Seeed Studio Grove Vision AI (WE2) device.",
+		"version": "2024.08.19",
+		"bins": [{
+			"name": "output_2024_8_19.img",
+			"url": "https://files.seeedstudio.com/sscma/firmware/grove_vision_ai_we2/output_2024_8_19.img",
+			"address": 0
+		}],
+		"model_slots": [{
+			"address": 4194304
+		}]
+	}],
+	"models": [{
+			"uuid": "f2b99229ba108c82de9379c4b6ad6354",
+			"name": "Person Detection",
+			"version": "1.0.0",
+			"category": "Object Detection",
+			"model_type": "TFLite",
+			"algorithm": "Swift-YOLO Nano Power By SSCMA",
+			"description": "The model is a Swift-YOLO model trained on the person detection dataset.",
+			"image": "https://files.seeedstudio.com/sscma/static/detection_person.png",
+			"classes": [
+				"person"
+			],
+			"devices": "we2",
+			"url": "https://files.seeedstudio.com/sscma/model_zoo/detection/person/swift_yolo_nano_person_192_int8_vela.tflite",
+			"metrics": {
+				"mAP(%)": 92.6,
+				"Inference(ms)": {
+					"we2": 76.0
+				}
+			},
+			"author": "Seeed Studio",
+			"checksum": "md5:f2b99229ba108c82de9379c4b6ad6354",
+			"license": "MIT"
+		},
+		{
+			"uuid": "e02b12229ba108c312de93724b11d6354",
+			"name": "Human Pose Detection",
+			"version": "1.0.0",
+			"category": "Keypoint Detection",
+			"model_type": "TFLite",
+			"algorithm": "YOLOV8 By Ultralytics",
+			"description": "The model is a YOLOV8 model trained on the person pose detection dataset.",
+			"image": "https://files.seeedstudio.com/sscma/static/detection_pose.png",
+			"classes": [
+				"person"
+			],
+			"devices": "we2",
+			"url": "https://files.seeedstudio.com/sscma/model_zoo/pose/human/yolov8n-pose_256_int8_pose_vela.tflite",
+			"author": "Ultralytics",
+			"checksum": "sha1:54b4225cc6994724e2fa9b547890c469996e2ac5",
+			"license": "AGPL3.0"
+		},
+		{
+			"uuid": "242112239ba18c312de9372cb1ad6e26",
+			"name": "Hand Pose Detection (Experimental)",
+			"version": "1.0.0",
+			"category": "Keypoint Detection",
+			"model_type": "TFLite",
+			"algorithm": "YOLOV8 By Ultralytics",
+			"description": "The model is a YOLOV8 model trained on the hand pose detection dataset.",
+			"image": "https://files.seeedstudio.com/sscma/static/detection_pose_hand.png",
+			"classes": [
+				"hand"
+			],
+			"devices": "we2",
+			"url": "https://files.seeedstudio.com/sscma/model_zoo/pose/hand/yolov8n-pose_256_hand_pose_int8_vela.tflite",
+			"author": "Ultralytics",
+			"checksum": "sha1:54b4225cc6994724e2fa9b547890c469996e2ac5",
+			"license": "AGPL3.0"
+		},
+		{
+			"uuid": "91331a9db811ed5cfb5cdba2e419e507",
+			"name": "Gesture Detection",
+			"version": "1.0.0",
+			"category": "Object Detection",
+			"model_type": "TFLite",
+			"algorithm": "Swift-YOLO power by SSCMA",
+			"description": "The model is a Swift-YOLO model trained on the gesture detection dataset.",
+			"image": "https://files.seeedstudio.com/sscma/static/detection_gesture.png",
+			"classes": [
+				"paper",
+				"rock",
+				"scissors"
+			],
+			"devices": [
+				"we2"
+			],
+			"url": "https://files.seeedstudio.com/sscma/model_zoo/detection/gesture/swift_yolo_1xb16_300e_coco_sha1_8d25b2b0be2a0ea38d3fe0aca5ce3891f7aa67c5_vela.tflite",
+			"metrics": {
+				"mAP(%)": 93.0,
+				"Inference(ms)": {
+					"grove_vision_ai_we2": 47
+				}
+			},
+			"author": "Seeed Studio",
+			"checksum": "md5:91331a9db811ed5cfb5cdba2e419e507",
+			"license": "MIT"
+		},
+
+		{
+			"uuid": "377aee70190387cc4cf2435f13aab3af",
+			"name": "Face Detection",
+			"version": "1.0.0",
+			"category": "Object Detection",
+			"model_type": "TFLite",
+			"algorithm": "Swift-YOLO power by SSCMA",
+			"description": "The model is a Swift-YOLO model trained on the face detection dataset.",
+			"image": "https://files.seeedstudio.com/sscma/static/detection_face.png",
+			"classes": [
+				"face"
+			],
+			"devices": [
+				"we2"
+			],
+			"url": "https://files.seeedstudio.com/sscma/model_zoo/detection/face_detection/swift_yolo_1xb16_300e_coco_300_int8_sha1_2287b951101007d4cd1d09c3da68e53e6f23a071_vela.tflite",
+			"metrics": {
+				"mAP(%)": 97.9,
+				"Inference(ms)": {
+					"grove_vision_ai_we2": 33
+				}
+			},
+			"author": "Seeed Studio",
+			"checksum": "md5:377aee70190387cc4cf2435f13aab3af",
+			"license": "MIT"
+		},
+		{
+			"uuid": "22da293b391c08f90cbd7ed8b545ddce",
+			"name": "Gender Detection",
+			"version": "1.0.0",
+			"category": "Object Detection",
+			"model_type": "TFLite",
+			"algorithm": "Swift-YOLO power by SSCMA",
+			"description": "The model is a Swift-YOLO model trained on the gender detection dataset.",
+			"image": "https://files.seeedstudio.com/sscma/static/gender_cls.png",
+			"classes": [
+				"male",
+				"female"
+			],
+			"devices": [
+				"we2"
+			],
+			"url": "https://files.seeedstudio.com/sscma/model_zoo/detection/gender/gender_detection_int8_vela.tflite",
+			"metrics": {
+				"mAP(%)": 95.5,
+				"Inference(ms)": {
+					"grove_vision_ai_we2": 45
+				}
+			},
+			"author": "Seeed Studio",
+			"checksum": "md5:22da293b391c08f90cbd7ed8b545ddce",
+			"license": "MIT"
+		},
+		{
+			"uuid": "b0b1870a62dd7b432d4658eb791022a7",
+			"name": "Digital Meter Water",
+			"version": "1.0.0",
+			"category": "Object Detection",
+			"model_type": "TFLite",
+			"algorithm": "Swift-YOLO power by SSCMA",
+			"description": "The model is a Swift-YOLO model trained on the Digital Meter Water dataset, which can detect the water meter number.",
+			"image": "https://files.seeedstudio.com/sscma/static/detect_meter.png",
+			"classes": [
+				"0",
+				"1",
+				"2",
+				"3",
+				"4",
+				"5",
+				"6",
+				"7",
+				"8",
+				"9",
+				"-"
+			],
+			"devices": [
+				"we2"
+			],
+			"url": "https://files.seeedstudio.com/sscma/model_zoo/detection/water_meter/yolov5_tiny_1xb16_300e_coco_int8_sha1_7975ab6a7d1daa26f61a2d364f82594834587bfe_vela.tflite",
+			"metrics": {
+				"mAP(%)": 88.3,
+				"MACs(MB)": 89.0,
+				"Peek RAM(MB)": 0.35,
+				"Inference(ms)": {
+					"grove_vision_ai_we2": 49
+				}
+			},
+			"author": "Seeed Studio",
+			"checksum": "md5:b0b1870a62dd7b432d4658eb791022a7",
+			"license": "MIT"
+		},
+		{
+			"uuid": "91331a9dcg11ed5cfbd6dba2e549e587",
+			"name": "Peoplenet Detection",
+			"version": "1.0.0",
+			"category": "Object Detection",
+			"model_type": "TFLite",
+			"algorithm": "peoplenet power by NVIDIA TAO",
+			"description": "This model was trained using the DetectNet_v2 entrypoint in TAO. The training algorithm optimizes the network to minimize the localization and confidence loss for the objects.",
+			"image": "https://files.seeedstudio.com/sscma/static/detect_bag.png",
+			"classes": [
+				"person",
+				"bag",
+				"face"
+			],
+			"devices": [
+				"we2"
+			],
+			"url": "https://files.seeedstudio.com/sscma/model_zoo/detection/peoplenet/resnet34_peoplenet_int8_vela.tflite",
+			"metrics": {
+				"mAP(%)": 85.41
+			},
+			"author": "Seeed Studio",
+			"checksum": "md5:91331a9db711ed5cfb5cdsa4e419e505",
+			"license": "OSS"
+		},
+		{
+			"uuid": "a0b1670a62cc7b632h4658eb791052a7",
+			"name": "Trafficcamnet Detection",
+			"version": "1.0.0",
+			"category": "Object Detection",
+			"model_type": "TFLite",
+			"algorithm": "Trafficcamnet power by NVIDIA TAO",
+			"description": "This model was trained using the DetectNet_v2 entrypoint in TAO. The training algorithm optimizes the network to minimize the localization and confidence loss for the objects.",
+			"image": "https://files.seeedstudio.com/sscma/static/detect_traffic.png",
+			"classes": [
+				"car",
+				"bicycle",
+				"person",
+				"road_sign"
+			],
+			"devices": [
+				"we2"
+			],
+			"url": "https://files.seeedstudio.com/sscma/model_zoo/detection/trafficcamnet/resnet18_trafficcamnet_pruned_vela.tflite",
+			"metrics": {
+				"mAP(%)": 43.9
+			},
+			"author": "Seeed Studio",
+			"checksum": "md5:7633er9db711gf5cfigcdfw4e419e21k",
+			"license": "OSS"
+		},
+		{
+			"uuid": "w02b1fkouba108c3128769724b11plrs7",
+			"name": "Lpdnet For USA Detection",
+			"version": "1.0.0",
+			"category": "Object Detection",
+			"model_type": "TFLite",
+			"algorithm": "Lpdnet power by NVIDIA TAO",
+			"description": "The US license plate models are trained on a proprietary dataset with over 45000 US car images.",
+			"image": "https://files.seeedstudio.com/sscma/static/detect_lpdnet.png",
+			"classes": [
+				"license plate"
+			],
+			"devices": [
+				"we2"
+			],
+			"url": "https://files.seeedstudio.com/sscma/model_zoo/detection/lpdnet/LPDNet_usa_pruned_tao5_vela.tflite",
+			"metrics": {
+				"mAP(%)": 80.46
+			},
+			"author": "Seeed Studio",
+			"checksum": "md5:ouwr54q8b711gf5c87624fw4e41997yr",
+			"license": "OSS"
+		},
+		{
+			"uuid": "u8k61a9dcg118po6fbd6dba2e54989qd",
+			"name": "Lpdnet For CCPD Detection",
+			"version": "1.0.0",
+			"category": "Object Detection",
+			"model_type": "TFLite",
+			"algorithm": "Lpdnet power by NVIDIA TAO",
+			"description": "The Chinese license plates is trained on a public dataset CCPD (Chinese City Parking dataset) with about 172000 images.",
+			"image": "https://files.seeedstudio.com/sscma/static/detect_ccpd.png",
+			"classes": [
+				"license plate"
+			],
+			"devices": [
+				"we2"
+			],
+			"url": "https://files.seeedstudio.com/sscma/model_zoo/detection/ccpd/LPDNet_CCPD_pruned_tao5_vela.tflite",
+			"metrics": {
+				"mAP(%)": 72.22
+			},
+			"author": "Seeed Studio",
+			"checksum": "md5:rup91a9db787ko5cfb5cdde4e419e59k",
+			"license": "OSS"
+		},
+		{
+			"uuid": "821k670adf317b632h4op81b79105e56",
+			"name": "Dashcamnet Detection",
+			"version": "1.0.0",
+			"category": "Object Detection",
+			"model_type": "TFLite",
+			"algorithm": "Dashcamnet power by NVIDIA TAO",
+			"description": "DashCamNet v1.0 model was trained on a proprietary dataset with more than 2 million objects for car class.",
+			"image": "https://files.seeedstudio.com/sscma/static/detect_traffic.png",
+			"classes": [
+				"car",
+				"bicycle",
+				"person",
+				"road_sign"
+			],
+			"devices": [
+				"we2"
+			],
+			"url": "https://files.seeedstudio.com/sscma/model_zoo/detection/dashcamnet/resnet18_dashcamnet_pruned_vela.tflite",
+			"metrics": {
+				"mAP(%)": 15.21
+			},
+			"author": "Seeed Studio",
+			"checksum": "md5:vb37er9db711gop57igcdfw4eef9e26l",
+			"license": "OSS"
+		}
+	]
+}

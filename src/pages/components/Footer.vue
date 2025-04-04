@@ -1,11 +1,11 @@
 <template>
   <a-layout-footer class="footer">
-    <img class="logo" :src="seeedLogoIcon" />
+    <img class="logo" :src="mountainLogoIcon" />
   </a-layout-footer>
 </template>
 
 <script lang="ts" setup>
-  import seeedLogoIcon from '@/assets/images/seeed-logo.png';
+  import mountainLogoIcon from '@/assets/images/mountain_full_logo_400x100.png';
 </script>
 
 <style lang="less" scoped>
