@@ -1,7 +1,6 @@
 # IBEX configuration 
-
-
-It is a Web Toolkit for senseCraft AIoT Platform, which is a visual programming platform for AIoT applications. It is based on [Vue.js](https://vuejs.org/) and [Vuetify](https://vuetifyjs.com/).
+This is a website to configure mountain ibex devices.
+It is adapted from seeedstudio Sencraft Web Toolkit ( https://github.com/Seeed-Studio/SenseCraft-Web-Toolkit )
 
 ## How to Use
 
